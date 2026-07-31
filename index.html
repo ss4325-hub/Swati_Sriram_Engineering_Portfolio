@@ -27,7 +27,9 @@
   html{ scroll-behavior:smooth; }
   body{
     margin:0;
-    background:var(--bg);
+    background-color:var(--bg);
+    background-image:radial-gradient(var(--line) 1px, transparent 1px);
+    background-size:18px 18px;
     color:var(--ink);
     font-family:var(--sans);
     line-height:1.55;
@@ -44,8 +46,6 @@
   }
 
   header.site{
-    border-bottom:1px solid var(--line);
-    background:var(--bg);
     position:sticky;
     top:0;
     z-index:20;
@@ -169,7 +169,6 @@
 
   .focus-list{
     margin-top:48px;
-    border-top:1px solid var(--line);
     padding-top:28px;
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
@@ -445,10 +444,6 @@
   </section>
 
 </main>
-
-<footer>
-  <div class="wrap">© 2026 Jordan Reyes. Built as a static site.</div>
-</footer>
 
 <script>
   /* ============================================================
