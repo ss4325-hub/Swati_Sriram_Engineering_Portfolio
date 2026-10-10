@@ -1,3 +1,194 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Swati Sriram | Mechanical Engineering</title><meta name="description" content="Mechanical engineering design portfolio of Swati Sriram, Cornell University."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
-<body><header class="site-header"><div class="container header-inner"><a class="wordmark" href="#home">SWATI SRIRAM<span> / ME</span></a><nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="#resume">Resume</a><a href="mailto:ss4325@cornell.edu">Contact</a></nav></div></header><main id="home"><section class="container hero"><p class="eyebrow">MECHANICAL ENGINEERING · CORNELL UNIVERSITY '28</p><h1>Designing, analyzing, and building mechanical systems.</h1><p class="intro">I'm Swati, a mechanical engineering student at Cornell University. My work spans mechanical design, structural analysis, manufacturing, and autonomous robotic systems.</p><div class="hero-links"><a class="button" href="#projects">Explore projects ↓</a><a class="text-link" href="mailto:ss4325@cornell.edu">Get in touch ↗</a></div></section><section id="projects" class="container section"><div class="section-heading"><span class="eyebrow">01 / SELECTED WORK</span><h2>Engineering Projects</h2></div><div id="project-grid" class="project-grid"></div></section><section id="project-detail" class="container detail" hidden aria-live="polite"><button id="close-detail" class="back">← All projects</button><div id="detail-content"></div></section><section id="about" class="container section about"><div class="section-heading"><span class="eyebrow">02 / BACKGROUND</span><h2>About</h2></div><div class="about-layout"><div><p>I'm a Mechanical Engineering student at Cornell University (Class of 2028). I have worked on underwater robotics, acoustic sensor platforms, pneumatic robots, and autonomous navigation.</p><p>My approach to design starts with requirements and constraints, then moves through CAD, analysis, fabrication, and testing. I am particularly interested in the intersection of mechanical hardware and robotic systems.</p></div><div class="skills"><h3>Technical skills</h3><p><strong>Design:</strong> SolidWorks, Fusion 360, GD&T, CAD assemblies</p><p><strong>Analysis:</strong> SolidWorks Simulation, ANSYS Mechanical, static and modal FEA</p><p><strong>Manufacturing:</strong> Manual machining, 3D printing, mechanical assembly</p><p><strong>Programming:</strong> Python, MATLAB, C++, Java, OpenCV</p></div></div></section><section id="resume" class="container section resume"><div class="section-heading"><span class="eyebrow">03 / EXPERIENCE</span><h2>Resume</h2></div><p>Add your latest resume PDF to <code>assets/resume.pdf</code> to activate the link below.</p><a class="button" href="assets/resume.pdf" target="_blank" rel="noopener">View resume ↗</a></section></main><footer><div class="container footer-inner"><span>© <span id="year"></span> Swati Sriram</span><a href="mailto:ss4325@cornell.edu">ss4325@cornell.edu ↗</a></div></footer><script src="script.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Swati Sriram | Mechanical Engineering</title>
+  <meta name="description"
+        content="Mechanical engineering design portfolio of Swati Sriram, Cornell University.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home">
+        SWATI SRIRAM<span> / ME</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="mailto:ss4325@cornell.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- INTRODUCTION -->
+    <section class="container hero" aria-label="Introduction">
+      <div class="hero-content">
+
+        <p class="hero-kicker">Hello, I'm</p>
+
+        <h1>
+          Swati Sriram<span class="hero-period">.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Mechanical Engineering at Cornell University
+          <span class="hero-dot">·</span>
+          Class of 2028
+        </p>
+
+        <p class="hero-description">
+          I design, analyze, and build mechanical systems,
+          with experience in underwater robotics, sensor
+          integration, manufacturing, and testing. This
+          portfolio documents selected projects and the
+          engineering decisions behind them.
+        </p>
+
+        <div class="hero-links">
+          <a href="#projects">
+            Selected work <span aria-hidden="true">↘</span>
+          </a>
+          <a href="mailto:ss4325@cornell.edu">
+            Email <span aria-hidden="true">↗</span>
+          </a>
+          <a href="#resume">
+            Resume <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+      <div class="section-heading">
+        <span class="eyebrow">01 / SELECTED WORK</span>
+        <h2>Engineering Projects</h2>
+      </div>
+
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+
+    <!-- PROJECT DETAILS -->
+    <section id="project-detail"
+             class="container detail"
+             hidden
+             aria-live="polite">
+
+      <button id="close-detail" class="back">
+        ← All projects
+      </button>
+
+      <div id="detail-content"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section about">
+      <div class="section-heading">
+        <span class="eyebrow">02 / BACKGROUND</span>
+        <h2>About</h2>
+      </div>
+
+      <div class="about-layout">
+        <div>
+          <p>
+            I'm a Mechanical Engineering student at Cornell
+            University (Class of 2028). I have worked on
+            underwater robotics, acoustic sensor platforms,
+            pneumatic robots, and autonomous navigation.
+          </p>
+
+          <p>
+            My approach to design starts with requirements
+            and constraints, then moves through CAD,
+            analysis, fabrication, and testing. I am
+            particularly interested in the intersection
+            of mechanical hardware and robotic systems.
+          </p>
+        </div>
+
+        <div class="skills">
+          <h3>Technical skills</h3>
+
+          <p>
+            <strong>Design:</strong>
+            SolidWorks, Fusion 360, GD&T, CAD assemblies
+          </p>
+
+          <p>
+            <strong>Analysis:</strong>
+            SolidWorks Simulation, ANSYS Mechanical,
+            static and modal FEA
+          </p>
+
+          <p>
+            <strong>Manufacturing:</strong>
+            Manual machining, 3D printing, mechanical assembly
+          </p>
+
+          <p>
+            <strong>Programming:</strong>
+            Python, MATLAB, C++, Java, OpenCV
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="container section resume">
+      <div class="section-heading">
+        <span class="eyebrow">03 / EXPERIENCE</span>
+        <h2>Resume</h2>
+      </div>
+
+      <p>
+        Add your latest resume PDF to
+        <code>assets/resume.pdf</code>
+        to activate the link below.
+      </p>
+
+      <a class="button"
+         href="assets/resume.pdf"
+         target="_blank"
+         rel="noopener">
+        View resume ↗
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>
+        © <span id="year"></span> Swati Sriram
+      </span>
+
+      <a href="mailto:ss4325@cornell.edu">
+        ss4325@cornell.edu ↗
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
