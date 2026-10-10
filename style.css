@@ -34,3 +34,11 @@
 .hero-photo-placeholder small{font:11px var(--mono);margin-top:8px}
 @media(max-width:650px){.hero{padding-top:38px;padding-bottom:48px}.hero-layout{grid-template-columns:minmax(0,1fr) 120px;gap:18px;align-items:start}.hero h1{font-size:clamp(32px,7vw,42px)}.hero-subtitle{font-size:13px}.hero-description{font-size:14px}.hero-photo{margin-top:10px}.hero-photo-placeholder small{font-size:9px;overflow-wrap:anywhere}.hero-links{gap:16px}}
 @media(max-width:420px){.hero-layout{grid-template-columns:1fr}.hero-photo{width:150px;grid-row:1}.hero h1{font-size:40px}}
+
+/* Minimal navigation: section links anchored left */
+.header-inner{justify-content:space-between;min-height:66px}
+.site-header nav{margin-right:auto;gap:30px}
+.site-header nav a{font:500 14px var(--sans);color:var(--ink)}
+.site-header nav a:hover{color:var(--blue)}
+.site-header .wordmark{font:600 14px var(--sans);letter-spacing:-.01em;color:var(--muted)}
+@media(max-width:650px){.header-inner{flex-direction:row;align-items:center;gap:16px;padding-top:16px;padding-bottom:16px}.site-header nav{gap:16px}.site-header nav a{font-size:12px}.site-header .wordmark{display:none}}
